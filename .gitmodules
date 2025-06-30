@@ -1,0 +1,3 @@
+[submodule "organo"]
+	path = organo
+	url = https://github.com/lsouza-dev/react-organo.git
