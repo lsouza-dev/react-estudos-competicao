@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa';
 import Botao from '../Botao';
 import { useState } from 'react';
 
-const Formulario = () => {
+const Formulario = ({times,adicionarColaborador}) => {
 
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('')
@@ -13,24 +13,25 @@ const Formulario = () => {
 
     const aoSalvar = (event) => {
         event.preventDefault();
-        const dados = {
+        
+        const novoColaborador = {
             'nome': nome,
             'cargo': cargo,
             'imagem': imagem,
             'time': time
         }
 
-        console.log(dados)
+        console.log(novoColaborador)
+        adicionarColaborador(colaboradores => [...colaboradores,novoColaborador])
+        limparCampos()
     }
 
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
+    const limparCampos = () => {
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
+    }
 
     return (
         <section className='formulario'>
