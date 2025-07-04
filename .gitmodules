@@ -1,3 +1,6 @@
 [submodule "organo"]
 	path = organo
 	url = https://github.com/lsouza-dev/react-organo.git
+[submodule "react-componentes-funcionam"]
+	path = react-componentes-funcionam
+	url = https://github.com/lsouza-dev/react-componentes-funcionam.git
