@@ -4,3 +4,9 @@
 [submodule "react-componentes-funcionam"]
 	path = react-componentes-funcionam
 	url = https://github.com/lsouza-dev/react-componentes-funcionam.git
+[submodule "react-blog-pessoal"]
+	path = react-blog-pessoal
+	url = https://github.com/lsouza-dev/react-blog-pessoal.git
+[submodule "blog-pessoal"]
+	path = blog-pessoal
+	url = https://github.com/lsouza-dev/react-blog-pessoal.git
